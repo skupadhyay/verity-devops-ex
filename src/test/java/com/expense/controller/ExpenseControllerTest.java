@@ -32,6 +32,7 @@ import com.expense.entity.User;
 import com.expense.entity.repository.ExpenseRepository;
 import com.expense.entity.repository.UserRepository;
 import com.expense.service.ExpenseService;
+import org.springframework.security.test.context.support.WithMockUser; //Simon
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = ExpenseApplication.class)
