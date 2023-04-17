@@ -21,12 +21,12 @@ pipeline {
         }
 		//Code ends for Compile
 
-//Code starts for stage Code Analysis
+        //Code starts for stage Code Analysis
 		stage('Code Analysis') {
             steps {
 			 script {
-          scannerHome = tool 'sonarscanner'
-        }
+                    scannerHome = tool 'sonarscanner'
+                    }
 				withSonarQubeEnv('SonarServer')
 				{
 				sh "${scannerHome}/bin/sonar-scanner"
@@ -42,11 +42,11 @@ pipeline {
                     }
                     post {
                         always {
-                            junit '/target/surefire-reports/*.xml'
+                            junit '**/target/surefire-reports/*.xml'
                         }
                     }
                 }
-        		//Code ends for stage Unit Test
+        //Code ends for stage Unit Test
 
 		// ******ALL CODE TO BE ADDED ABOVE THIS COMMENT******
     }
