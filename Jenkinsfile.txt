@@ -54,7 +54,7 @@ pipeline {
                         sh 'mvn jacoco:report'
                     }
                 }
-        //Code end for stage Code Coverage
+        //Code end for Code Coverage
 
 		// ******ALL CODE TO BE ADDED ABOVE THIS COMMENT******
     }
