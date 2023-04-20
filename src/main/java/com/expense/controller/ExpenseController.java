@@ -56,8 +56,7 @@ public class ExpenseController {
 		System.out.println("expenseList: " + expenseList.size());
 		model.addAttribute("user", user);
 		model.addAttribute("expeseList", expenseList);
-		//log.info("login successful: " + expenseList);
-		System.out.println("login successful: " + expenseList);
+		log.info("login successful: " + expenseList);
 		return "expenseList.jsp";
 	}
 
