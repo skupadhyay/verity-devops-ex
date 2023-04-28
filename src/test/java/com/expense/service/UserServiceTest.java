@@ -49,12 +49,12 @@ public class UserServiceTest {
 	public void saveUserTest() {
 		
 		User user = new User();
-		user.setUsername("SUN");
+		user.setUsername("");
 		
 		when(userRepository.save(Mockito.any(User.class))).thenReturn(user);
 		User created = userService.saveUser(user);
 		
-		assertThat(created.getUsername(), is("SUN"));
+		assertThat(created.getUsername(), is(""));
 	}
 	
 	@Test
