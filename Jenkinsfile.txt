@@ -58,6 +58,14 @@ pipeline {
                 }
         //Code end for Code Coverage
 
+        //Code start for E-mail stage.
+        stage('E-mail'){
+            steps{
+                emailext attachLog: true, body: '', subject: 'Build Report', to: 'sonika.bengani@kritikalvision.ai,vishal.upadhyay@kritikalvision.ai'
+            }
+        }
+        //Code ends for Em-mail stage.
+
 
 		// ******ALL CODE TO BE ADDED ABOVE THIS COMMENT******
     }
