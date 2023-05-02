@@ -35,13 +35,7 @@ pipeline {
 		}
 		//Code ends for stage Code Analysis
 
-        //Code start for E-mail stage.
-        stage('E-mail'){
-            steps{
-                emailext attachLog: true, body: '', subject: 'Build Report', to: 'sonika.bengani@kritikalvision.ai,vishal.upadhyay@kritikalvision.ai'
-            }
-        }
-        //Code ends for Em-mail stage.
+
 
 		//Code starts for stage Unit Test
                 stage('Unit Test') {
