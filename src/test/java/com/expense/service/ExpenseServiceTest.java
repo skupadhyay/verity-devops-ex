@@ -40,13 +40,13 @@ public class ExpenseServiceTest {
 	@Test
 	public void saveExpenseTest() {
 		Expense expense = new Expense();
-		expense.setAmount(1000.00);
+		expense.setAmount(2000.00);
 
 		when(expenseRepository.save(Mockito.any(Expense.class))).thenReturn(expense);
 		Expense created = expenseService.saveExpense(expense);
 
 		log.info("created: "+created);
-		assertThat(created.getAmount(), is(1000.00)); //chngs
+		assertThat(created.getAmount(), is(2000.00)); //chngs
 	}
 
 	@Test
