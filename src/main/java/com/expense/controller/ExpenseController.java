@@ -53,7 +53,7 @@ public class ExpenseController {
 		log.info(" processing");
 		User user = userService.getDefaultUser();
 		List<Expense> expenseList = expenseService.getExpenseByUserId(user.getId());
-		log.info("expenseList: " + expenseList.size());
+		//log.info("expenseList: " + expenseList.size());
 		model.addAttribute("user", user);
 		model.addAttribute("expeseList", expenseList);
 		log.info("login successful: " + expenseList);
