@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    stages {
-		
-		
+    stages {		
 		// ******ALL CODE TO BE ADDED BELOW THIS COMMENT******
 		
 		//Clean stage
