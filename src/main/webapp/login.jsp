@@ -7,7 +7,7 @@
 body {
 	/* The image used */
 	background-image:
-		url("${pageContext.request.contextPath}/images/bank-notes.jpg");
+		url("${pageContext.request.contextPath}/public/images/bank-notes.jpg");
 	/* Full height */
 	height: 100%;
 	/* Center and scale the image nicely */
@@ -35,7 +35,7 @@ body {
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-right: 0px;">
 	<label class="navbar-brand">Expense Tracker</label>
 	<div style="width: 100%">
-	<img class="rounded float-right" src="${pageContext.request.contextPath}/images/logo.jpg" id="logo"  width="120" >
+	<img class="rounded float-right" src="${pageContext.request.contextPath}/public/images/logo.jpg" id="logo"  width="120" >
 	</div>
 
 </nav>
