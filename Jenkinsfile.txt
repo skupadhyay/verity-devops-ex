@@ -6,6 +6,15 @@ tools {
     }
     stages {		
 		// ******ALL CODE TO BE ADDED BELOW THIS COMMENT******
+
+
+stage ('Update') {
+    try {
+        dir('jenkins/pipeline/update-jenkins-plugins-ppln') {
+            sh 'ls -l'
+            sh 'update-plugins.sh'
+        }
+}
 		
 		//Clean stage
         //stage('Clean') {
