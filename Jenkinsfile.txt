@@ -7,13 +7,13 @@ tools {
     stages {		
 		// ******ALL CODE TO BE ADDED BELOW THIS COMMENT******
 		
-		<!--//Clean stage
-        stage('Clean') {
-            steps {
-                sh 'mvn clean verify'
-            }
-        }
-		//Clean stage End -->
+		//Clean stage
+        //stage('Clean') {
+            //steps {
+                //sh 'mvn clean verify'
+            //}
+        //}
+		//Clean stage End 
 		
         //Code starts for stage Compile
 		stage('Compile') {
