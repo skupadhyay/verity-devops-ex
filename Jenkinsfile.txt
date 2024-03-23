@@ -9,7 +9,7 @@ tools {
 		//Clean stage
         stage('Clean') {
             steps {
-                sh 'mvn clean'
+                sh 'mvn clean verify'
             }
         }
 		//Clean stage End
